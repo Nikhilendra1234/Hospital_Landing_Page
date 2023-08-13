@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    height:auto;
+    background-image:url('background.png')  ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav h1{
+    font-size: 30px;
+    color: #d8dadc;
+}
+nav .links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+nav .links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #d8dadc;
+}
+nav button{
+    padding: 10px 5px;
+    background-color: #4384d9;
+    color: #d8dadc;
+    border-radius: 5px;
+    border:1px #4384d9 solid ;
+    font-weight: bold;
+}
+nav > .hamberg{
+    background-color: #383131;
+    height: 40px;
+    width: 40px;
+    color:#000 ;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    float: right;
+    display: none;
+   }
+   .hamberg >span{
+     width:20px;
+     height: 4px;
+     background-color: #000;
+     margin: 3px;
+   }
+   .main{
+    width: 100%;
+    height: auto;
+    padding: 30px ;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+    .main .texts .ht h1{
+        color: #fff;
+        font-size: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        line-height: 1.6;  
+    }
+    .main .texts .para{
+        width: 250px;
+        margin: 20px 0px;
+    }
+    .main .texts .para p{
+        font-size: 16px;
+        line-height: 1.5;
+        color: #fff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .main .texts .btn{
+        margin: 10px 0px;
+    }
+    .main .texts button{
+        padding: 12px 18px;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+    }
+    .main .texts .btn .btn1{
+        background-color: #4384d9;
+    }
+    .main .texts .btn .btn2{
+        background: transparent;
+        border: 1px solid #fff;
+        padding: 12px 25px;
+    }
+    .main .sign{
+        width: auto;
+        height: auto;
+        background-color: #fff;
+        border-radius: 7px;
+        padding: 30px ;
+        background-color: #fdf7f7;
+    }
+    .main .sign h2{
+        font-size: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-bottom:20px ;
+    }
+    .main .sign h4{
+        font-size: 15px;
+        margin: 4px 0px;
+        font-weight: bold;
+        color: #615f5f;
+    }
+    .main .sign  form input,select{
+        width: 90%;
+        height: 35px;
+        padding: 2px 5px;
+        margin-bottom: 15px;
+    }
+    .main .sign  form button{
+        width: 90%;
+        height: 50px;
+        border: none;
+        border-radius: 7px;
+        padding: 15px ;
+        margin-top: 20px;
+        color: #fff;
+        background-color: #4384d9;
+        font-weight: bold;
+    }
+    .main2{
+        width: 100%;
+        height: auto;
+        padding: 60px 0px;
+        background-color: #f6f8f9;
+    }
+    .land{
+        width: 500px;
+        height: 100px;
+        margin: 0px auto;
+        margin-bottom: 60px;
+    }
+    .land h2{
+        font-size: 40px;
+        margin: 10px auto;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       text-align: center;
+    }
+    .land p{
+        color: #787373;
+        text-align: center;
+    }
+    .main2 .cards{
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 60px 0px;
+        gap: 20px;
+    }
+    .main2 .cards .card{
+        width: auto;
+        height: auto;
+        border: 1px solid #4384d9;
+        border-radius: 10px;
+        
+    }
+    .main2 .cards .card .img{
+        background-color:#4384d9 ;
+        padding:  30px;
+        border-radius: 10px;
+    }
+    .main2 .cards .card .img h4{
+        display: inline;
+        margin: 0px 5px;
+        color: #d8dadc;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .main2 .cards .card .img span{
+        padding: 10px 10px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .main2 .cards .card .desc{
+        padding: 15px 30px;
+    }
+    .main2 .cards .card .desc ul{
+        list-style: none;
+    }
+    .main2 .cards .card .desc ul li{
+        font-size: 15px;
+        color: #6b6363;
+        padding: 5px 0px;
+    }
+    .main2 .cards .card .desc a{
+        color: #4384d9;
+        padding: 5px ;
+        text-decoration: none;
+    }
+    .main3{
+        width: 100%;
+        height: auto;
+        padding: 60px 0px;
+        background-color: #fdf7f7;
+    }
+    .main3 .cards2 {
+        width: 90%;
+        height: auto;
+        padding: 60px 0px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .main3 .cards2 .card2{
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #aca3a3;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    .main3 .cards2 .card2 div {
+       margin-bottom: 10px;
+    }
+    .main3 .cards2 .card2 p{
+        color: #706969;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        line-height:1.5;
+    }
+    .main3 .cards2 .card2 img{
+        padding: 10px;
+        border-radius: 50%;
+
+    }
+    .main4{
+        width: 100%;
+        height: auto;
+        padding: 60px 0px;
+        background-color: #f6f8f9;
+    }
+    .main4 .cards3 {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+        /* display: grid; */
+        /* grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        align-content: center;
+        grid-gap: 20px; */
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        padding: 60px 0px;
+    }
+    .main4 .cards3 .card3{
+        width:300px;
+        padding: 20px;
+        z-index: 1;
+        position: relative;
+    }
+    .main4 .cards3 .card3 span{
+        position: absolute;
+        right: 2%;
+        left: 2%;
+        color:#4384d9 ;
+        font-size: 24px;
+    }
+    .main4 .cards3 .card3 h4{
+        font-size: 20px;
+        font-weight: bold;
+        color: #454343;
+        line-height: 1.5;
+        padding: 0px 5px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-bottom: 10px;
+    }
+    .main4 .cards3 .card3 p{
+        font-size: 15px;
+        color: #7b7979;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 0px 5px;
+    }
+    .main5{
+        width: 100%;
+        height: auto;
+        padding: 60px 0px;
+        background-color: #fdf7f7;
+    }
+    .main5 .cards4{
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        padding: 60px 0px;
+    }
+    .main5 .cards4 .card4{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid #4384d9;
+        gap: 15px;
+        flex-wrap: wrap;
+        border-radius: 8px;
+    }
+    .main5 .cards4 .card4 h2{
+        padding: 10px 0px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 30px;
+        text-align: center;
+        color:#000 ;
+    }
+    .main5 .cards4 .card4 .price{
+        color: #5050c7;
+    }
+    .price sub,sup{
+        font-size: 12px;
+    }
+    .main5 .cards4 .card4 .h3{
+        width: 60%;
+        padding: 10px 0px;
+    }
+    .main5 .cards4 .card4 .h3 h3{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        color: #696868; 
+    }
+    .card4 .servedesc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .servedesc span{
+        padding: 5px;
+        color: #706969;
+    }
+    .servedesc span i{
+        padding: 3px 4px;
+        border-radius: 50%;
+        background-color: #088908;
+        color: #f6f8f9;
+    }
+    .servedesc span .gr{
+        background-color: #aca3a3;
+    }
+    .card4 button{
+        width: 100%;
+        padding: 10px 50px;
+        font-size: 15px;
+        font-weight: bold;
+        color: hsl(0, 33%, 99%);
+        background-color: #4384d9;
+        border: none;
+        border-radius: 7px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .dark{
+        background-color:#252323 ; 
+        transform: scaleY(1.1); 
+
+    }
+    .cards4 .dark h2:nth-child(1){
+        color: #b5aeae;
+    }
+    .main6 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #252323;
+        padding: 50px;
+    }
+    .main6 .text{
+        width: 400px;
+        height: auto;
+    }
+    .main6 .text h1{
+        color:#efe9e9 ;
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+    }
+    .main6 .text p{
+      color: #d8dadc;
+        font-size: 13px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      line-height: 1.3;
+    }
+    .main6 .inp{
+        width: 296px;
+        margin-top: 30px;
+        background-color: #fff;
+        height: 40px; 
+        border-radius: 5px;
+    }
+
+    .main6 input{
+        padding: 10px 20px;   
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+    .main6 .inp button{
+        background-color: #4384d9;
+        cursor: pointer;
+        width: 30%;
+        height: 100%;
+        border: none; 
+        border-radius: 5px;
+        padding: 0px 5px;
+        border-left: 1px solid #4384d9;
+    }
+    .main7{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .main7 .card7{
+        width: 200px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .main7 .card7 a,p   {
+        text-decoration: none;
+        color: #5b5a5a;
+    }
+    .main7 .card7 h2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .main7 .card7 i{
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    footer{
+        width: 100%;
+        height: 40px;
+        padding: 10px 0px;
+        text-align: center;
+        color: #696868;
+        background-color: #f6f8f9;
+    }
+@media screen and (max-width:860px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .links{
+        display: none;
+    }
+    nav button{
+        display: none;
+    }
+    nav .hamberg{
+        display: flex;
+    }
+}
+@media screen and (max-width:950px){
+    .main5 .cards4{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .main5 .cards4 .card4{
+        width:400px;
+        margin: 10px auto;
+    }
+    .land{
+        width: 400px;
+    }
+    .main6{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main6 .text{
+        margin: 10px auto;
+        width: 300px;
+    }
+    .main6 .inp{
+        margin: 10px auto;
+    }
+}
